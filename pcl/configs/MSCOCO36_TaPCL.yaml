@@ -1,0 +1,38 @@
+hydra:
+  run:
+    dir: ./experiments/TaPCL/${dataset}
+  job:
+    chdir: true
+
+  job_logging:
+    version: 1
+    formatters:
+      simple:
+        format: '%(message)s'
+
+device: "cuda:0"
+class_order: "class_orders/MSCOCO36.yaml"
+dataset_root: "../../DATA"
+workdir: "../../pcl"
+log_path: "metrics.json"
+model_name: "../../Pretrained_models/OpenCLIP-Vit-B-16Plus/vit_b_16_plus_240.pt"
+
+seed: 42
+epoch: 10 
+batch_size: 64
+increment: ${initial_increment}
+initial_increment: 1  
+scenario: "class"
+dataset: "MSCOCO36_TaPCL"
+
+weight_decay: 0
+l2: 0
+ce_method: 0
+
+method: "TaPCL"
+lr: 1e-4
+ls: 0.0
+T: 0.04
+weighted: True
+
+
