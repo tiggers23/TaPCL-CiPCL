@@ -1,0 +1,10 @@
+0#en
+1#el
+2#es
+3#fr
+4#it
+5#pl
+6#pt
+7#sv
+8#uk
+9#zh
