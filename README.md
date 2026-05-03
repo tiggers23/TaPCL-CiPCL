@@ -1,4 +1,4 @@
-# TaPCL-CiPCL
+# Efficiently Maintaining the Multilingual Capacity of MCLIP in Downstream Cross-Modal Retrieval Tasks
 
 This repository provides the code for **Efficiently Maintaining the Multilingual Capacity of MCLIP in Downstream Cross-Modal Retrieval Tasks**. The project studies how to fine-tune Multilingual CLIP (MCLIP) for downstream image-text retrieval while reducing the training cost caused by full parallel corpora.
 
@@ -28,6 +28,8 @@ For the translation script, the code loads the M2M100 model by default from:
 ```bash
 Pretrained_models/facebookm2m100_418M
 ```
+
+Users can download these pretrained models from Hugging Face and place them in the specified folders.
 
 ## Running
 
