@@ -31,6 +31,18 @@ Pretrained_models/facebookm2m100_418M
 
 Users can download these pretrained models from Hugging Face and place them in the specified folders.
 
+## Data
+
+The dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/18oWhvtJH5u0X0X1P3wZgoA?pwd=bxcj).
+
+Extraction code: `bxcj`
+
+After downloading, please place the dataset under:
+
+```bash
+DATA/
+```
+
 ## Running
 
 First, generate the translated key-term prompt data for CiPCL if needed:
