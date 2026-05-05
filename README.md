@@ -15,6 +15,18 @@ Install the required packages with:
 pip install -r requirements.txt
 ```
 
+## Data
+
+The dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/18oWhvtJH5u0X0X1P3wZgoA?pwd=bxcj).
+
+Extraction code: `bxcj`
+
+After downloading, please place the dataset under:
+
+```bash
+DATA/
+```
+
 ## Pretrained Models
 
 The code loads the OpenCLIP ViT-B/32 XLM-Roberta model by default from:
@@ -28,20 +40,7 @@ For the translation script, the code loads the M2M100 model by default from:
 ```bash
 Pretrained_models/facebookm2m100_418M
 ```
-
 Users can download these pretrained models from Hugging Face and place them in the specified folders.
-
-## Data
-
-The dataset can be downloaded from [Baidu Netdisk](https://pan.baidu.com/s/18oWhvtJH5u0X0X1P3wZgoA?pwd=bxcj).
-
-Extraction code: `bxcj`
-
-After downloading, please place the dataset under:
-
-```bash
-DATA/
-```
 
 ## Running
 
@@ -65,4 +64,4 @@ bash run_CiPCL.sh
 
 ## Note
 
-Some paths in the scripts are dataset-specific. If you use another dataset or another machine, please modify `dataset_root`, `class_order`, pretrained model paths, and the output path in `models_translate.py` accordingly.
+Some paths in the scripts are dataset-specific. If you use another dataset or another machine, please modify `dataset_root`, `class_order`, `pretrained model paths`, and the output path in `models_translate.py` accordingly.
